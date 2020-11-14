@@ -7,7 +7,7 @@ import { Transition } from "react-transition-group";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: theme.spacing(3, 0, 3),
+    margin: theme.spacing(3, 0, 2),
   },
   lightBulb: {
     verticalAlign: "middle",
@@ -25,7 +25,7 @@ export default function Project(props) {
   const classes = useStyles();
   return (
    <>
-    <Transition timeout={1250} {...props} appear>
+    <Transition {...props} appear>
      
      {(status) => (
        <div style={{
@@ -33,7 +33,10 @@ export default function Project(props) {
          opacity: status === 'entered' ? 1 : 0,
          transition: 'transform 500ms ease, opacity 500ms ease'
        }}>
-        <Typography className={classes.root} color="textSecondary">
+        <Typography className={classes.root}   style={{
+          color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)',
+          transition: 'all 300ms ease-in-out'
+        }}>
       Projects{" "}
       <ul>
       {projects.map((x,i) =>   <li key={i}>
@@ -41,7 +44,9 @@ export default function Project(props) {
           <Link href={x.link}>
             {x.linkTitle}
             </Link>
-          {x.title}
+        <span style={{
+          color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)'
+        }}>  {x.title}</span>
             
           <span style={{
             display:'block',

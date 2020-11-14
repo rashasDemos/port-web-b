@@ -28,12 +28,18 @@ export default function Experience(props) {
          opacity: status === 'entered' ? 1 : 0,
          transition: 'transform 500ms ease, opacity 500ms ease'
        }}>
-        <Typography className={classes.root} color="textSecondary">
+        <Typography className={classes.root}  style={{
+          color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)',
+          transition: 'all 300ms ease-in-out'
+        }}>
      
      Experience{" "}
      <ul>
        <li>
-         <Typography className={classes.lightBulb} color="textPrimary">
+         <Typography className={classes.lightBulb} style={{
+          color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)',
+          transition: 'all 300ms ease-in-out'
+        }}>
            Freelance React Developer{" "}
            <Link href="https://nextjs.org/">
              Using Next.JS
@@ -42,7 +48,9 @@ export default function Experience(props) {
          </Typography>
        </li>
        <li>
-         <Typography className={classes.lightBulb} color="textPrimary">
+         <Typography className={classes.lightBulb} style={{
+          color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)'
+        }}>
            Verizon Sales Associate{" "}
            <Link href="https://www.victra.com/">
              Victra
