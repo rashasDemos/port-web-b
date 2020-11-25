@@ -19,7 +19,9 @@ const projects = [
   { title: "3D Visualized Keyboard Chord Progression Utility", link: "https://orbmusic.club", linkTitle: " orbmusic.club ", cat: "Three.JS, React, Next.JS, Rebass, Tone.js, TonalJS" },
   { title: "Decision Maker - Randomized Algorithm", link: "https://choices.vercel.app", linkTitle: " choices.vercel.app ", cat: "Next.JS, React, Rebass" },
   { title: "Online Gaming Mouse Accuracy Practice Tool", link: "https://practice-point.vercel.app", linkTitle: " practice-point.vercel.app ", cat: "React, Next.JS, Rebass, React-Transition-Group, Context API" },
-  { title: "My Sophomore EP Release Website", link: "https://20byrasha.xyz/rollercoaster", linkTitle: " 20byrasha.xyz ", cat: "React, Next.JS, Rebass, React-Transition-Group, React-Player, CSS" }, { title: "Mock Commercial Website", link: "https://mock-commercial-site-f50t34p0i.vercel.app/", linkTitle: " mock-commercial-site.vercel.app ", cat: "React, Next.JS, Rebass, React-Transition-Group, Typescript, CSS" }
+  { title: "My Sophomore EP Release Website", link: "https://20byrasha.xyz/rollercoaster", linkTitle: " 20byrasha.xyz ", cat: "React, Next.JS, Rebass, React-Transition-Group, React-Player, CSS" },
+  { title: "Javascript Event Key Finder", link: "https://js-keys.vercel.app/", linkTitle: " js-keys.vercel.app ", cat: "React, Next.JS, Rebass, CSS" }, 
+  { title: "Mock Commercial Website", link: "https://mock-commercial-site-f50t34p0i.vercel.app/", linkTitle: " mock-commercial-site.vercel.app ", cat: "React, Next.JS, Rebass, React-Transition-Group, Typescript, CSS" }
 ].reverse();
 
 
