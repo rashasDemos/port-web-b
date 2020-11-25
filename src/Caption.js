@@ -5,7 +5,6 @@ import SvgIcon from "@material-ui/core/SvgIcon";
 import Typography from "@material-ui/core/Typography";
 import { Transition } from "react-transition-group";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(1, 0, 3),
