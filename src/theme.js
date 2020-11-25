@@ -32,7 +32,7 @@ export const darkTheme = createMuiTheme({
       main: red.A400,
     },
     background: {
-      default: '#000',
+      default: '#131c30',
     },
   },
 });

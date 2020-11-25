@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Experience(props) {
+export default function Education(props) {
   const classes = useStyles();
   return (
     <>
@@ -33,29 +33,29 @@ export default function Experience(props) {
           transition: 'all 300ms ease-in-out'
         }}>
      
-     Experience{" "}
+     Education{" "}
      <ul>
        <li>
          <Typography className={classes.lightBulb} style={{
           color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)',
           transition: 'all 300ms ease-in-out'
         }}>
-           Freelance React Developer{" "}
-           <Link href="https://nextjs.org/">
-             Using Next.JS
+           UCLA{" "}
+           <Link href="https://www.psych.ucla.edu/">
+            Psychology BA (Computer Science/Cognitive Science)
            </Link><br />
-          <span style={{opacity: 0.6}}> started in 2017 - present</span>
+           <span style={{opacity: 0.6}}>2018-2020</span> 
          </Typography>
        </li>
        <li>
          <Typography className={classes.lightBulb} style={{
           color: {...props}.inv ? 'white' : 'rgba(0, 0, 0, 0.54)'
         }}>
-           Verizon Sales Associate{" "}
-           <Link href="https://www.victra.com/">
-             Victra
+           Long Beach City College{" "}
+           <Link href="https://www.lbcc.edu/program-computer-science">
+             Computer Science Transfer
            </Link><br />
-          <span style={{opacity: 0.6}}> started in 2017 - end in 2018</span>
+           <span style={{opacity: 0.6}}> 2016 - 2018 </span>
          </Typography>
        </li>
      </ul>

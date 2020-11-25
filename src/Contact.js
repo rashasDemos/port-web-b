@@ -59,6 +59,11 @@ export default function Contact(props) {
         </li>)}
       </ul>
     </Typography>
+    <iframe style={{
+      transform: status === 'entered' ? 'translateY(0)' : 'translateY(-10vw)',
+      opacity: status === 'entered' ? 1 : 0,
+      transition: 'transform 500ms ease, opacity 500ms ease'
+    }} src="https://www.fiverr.com/anywhere/anywhere_widget/5fbc80c4d1b44600120e87b2" width="190" height="75" frameBorder="0" scrolling="no"></iframe>
        </div>
      )}
     </Transition> 

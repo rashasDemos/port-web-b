@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import Project from "../src/Projects";
 import { Transition } from "react-transition-group";
 import Contact from "../src/Contact";
+import Education from "../src/Education";
 
 export default function Index({inverted, setInverted}) {
   const [title, setTitle] = useState("");
@@ -138,6 +139,7 @@ export default function Index({inverted, setInverted}) {
                   alignItems: "baseline",
                 }}
               >
+                     {img("10%")}
                 <Typography
                   variant="h5"
                   component="h1"
@@ -149,7 +151,7 @@ export default function Index({inverted, setInverted}) {
                 >
                   {title}
                 </Typography>
-                {img("10%")}
+           
               </div>
             )}
           </Transition>
@@ -189,19 +191,24 @@ export default function Index({inverted, setInverted}) {
                 >
                   full resume link here
                 </Typography>
+                
               </div>
             )}
+            
           </Transition>
         )}
         {caption && <Experience inv={inverted} in={caption} />}
-        {caption && (
+        {caption && <Education  inv={inverted} in={caption} />}
+        {caption && ( 
           <Project
-            in={maxS > 100 ? opacity : caption}
-            timeout={maxS > 100 ? 100 : 1250}
+          appear
+            in={true}
+            timeout={true ? 1250 : 1250}
             inv={inverted} 
           />
         )}
         {caption && <Contact in={opacity}  inv={inverted}  />}
+        
       </Box>
     </Container></>
   );
